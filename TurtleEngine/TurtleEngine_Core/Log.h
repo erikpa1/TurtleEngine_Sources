@@ -4,4 +4,6 @@
 namespace turtle
 {
 	void LogError(const String & text);
+	void LogStart();
+	void LogFinish();
 }

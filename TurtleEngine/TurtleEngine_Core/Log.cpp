@@ -10,6 +10,14 @@ namespace turtle
 		std::cout << text;
 	}
 
+	void LogStart()
+	{
+	}
+
+	void LogFinish()
+	{
+	}
+
 }
 
 

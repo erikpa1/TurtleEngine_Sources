@@ -13,9 +13,9 @@ int main()
 		WindowTest * windowTest = new WindowTest();
 		windowTest->Construct();
 	}
-	catch (std::exception e)
+	catch (const std::exception & e)
 	{
-		std::cout << e.what();
+		std::cerr << e.what();
 	}
 
 

@@ -37,6 +37,9 @@
     <ClInclude Include="DataTypes.h">
       <Filter>DataTypes</Filter>
     </ClInclude>
+    <ClInclude Include="Errors.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Window.cpp">
@@ -52,6 +55,9 @@
       <Filter>GUI</Filter>
     </ClCompile>
     <ClCompile Include="Log.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Errors.cpp">
       <Filter>Debug</Filter>
     </ClCompile>
   </ItemGroup>
