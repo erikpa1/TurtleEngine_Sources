@@ -1,8 +1,10 @@
 #pragma once
 #include "Turtle.h"
 
-
-class GLFWwindow;
+namespace sf
+{
+	class RenderWindow;
+}
 
 namespace turtle
 {
@@ -14,23 +16,23 @@ namespace turtle
 
 	namespace gui
 	{
-		class TurtleExport Window
+		class TurtleExport TurtleWindow
 		{
 
 		public:
 
-			static Window * New();
+			static TurtleWindow * New();
 
 			void Construct();
 			void Destruct();
 
 		protected:
 
-			Window() = default;
+			TurtleWindow() = default;
 
 		private:
 
-			GLFWwindow * _window;
+			sf::RenderWindow * _window;
 			renderer::Renderer * _renderer;
 
 

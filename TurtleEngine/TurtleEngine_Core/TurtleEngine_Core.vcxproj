@@ -142,7 +142,7 @@
       <PreprocessorDefinitions>NDEBUG;TURTLEENGINECORE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\..\TurtleEngine_ExternalLibraries\glfw-3.3.2\include;$(SolutionDir)..\..\TurtleEngine_ExternalLibraries\glm;$(SolutionDir)..\..\TurtleEngine_ExternalLibraries\vulkan-1.2.121.2\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\TurtleEngine_ExternalLibraries\sfml\include;$(SolutionDir)..\..\TurtleEngine_ExternalLibraries\glew-2.1.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -151,27 +151,31 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
       <AdditionalLibraryDirectories>$(SolutionDir)..\..\TurtleEngine_ExternalLibraries\Libs;$(SolutionDir)..\..\TurtleEngine_Libraries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>glfw3.lib;glfw3dll.lib;shaderc_combined.lib;VkLayer_utils.lib;vulkan-1.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;sfml-audio.lib;sfml-main.lib;sfml-graphics.lib;sfml-network.lib;sfml-system.lib;sfml-window.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Color.h" />
     <ClInclude Include="DataTypes.h" />
+    <ClInclude Include="DefaultMesh.h" />
     <ClInclude Include="Errors.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="Log.h" />
+    <ClInclude Include="Mesh.h" />
     <ClInclude Include="OpenGlRenderer.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Renderer.h" />
     <ClInclude Include="Turtle.h" />
-    <ClInclude Include="Window.h" />
+    <ClInclude Include="TurtleWindow.h" />
     <ClInclude Include="WindowTest.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Color.cpp" />
+    <ClCompile Include="DefaultMesh.cpp" />
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="Errors.cpp" />
     <ClCompile Include="Log.cpp" />
+    <ClCompile Include="Mesh.cpp" />
     <ClCompile Include="OpenGlRenderer.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -179,7 +183,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="Window.cpp" />
+    <ClCompile Include="TurtleWindow.cpp" />
     <ClCompile Include="WindowTest.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

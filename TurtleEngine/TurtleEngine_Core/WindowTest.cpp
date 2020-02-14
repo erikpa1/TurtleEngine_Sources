@@ -1,6 +1,6 @@
 #include "pch.h"
 #include "WindowTest.h"
-#include "Window.h"
+#include "TurtleWindow.h"
 
 #include <iostream>
 
@@ -10,7 +10,7 @@ namespace turtle
 	{
 		void WindowTest::Construct()
 		{
-			const auto window = Window::New();
+			const auto window = TurtleWindow::New();
 			window->Construct();
 
 		}

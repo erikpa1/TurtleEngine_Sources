@@ -10,8 +10,16 @@ namespace turtle
 
 	namespace renderer
 	{
+		class Mesh;
+
 		class OpenGlRenderer : public Renderer
 		{
+
+		protected:
+
+			OpenGlRenderer() = default;
+			~OpenGlRenderer() = default;
+
 		public:
 
 			static OpenGlRenderer * New();
@@ -22,6 +30,12 @@ namespace turtle
 			
 			void ClearColor(const math::Color & color) override;
 			void Clear() override;
+
+			void ViewportResized(Double width, Double height) override;
+
+			void DrawMesh(renderer::Mesh * mesh) override;
+
+
 
 		};
 

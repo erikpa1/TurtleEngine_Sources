@@ -25,9 +25,6 @@
     <ClInclude Include="pch.h">
       <Filter>Precompiled</Filter>
     </ClInclude>
-    <ClInclude Include="Window.h">
-      <Filter>GUI</Filter>
-    </ClInclude>
     <ClInclude Include="WindowTest.h">
       <Filter>GUI</Filter>
     </ClInclude>
@@ -52,11 +49,17 @@
     <ClInclude Include="Color.h">
       <Filter>DataTypes</Filter>
     </ClInclude>
+    <ClInclude Include="TurtleWindow.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultMesh.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Window.cpp">
-      <Filter>GUI</Filter>
-    </ClCompile>
     <ClCompile Include="dllmain.cpp">
       <Filter>Precompiled</Filter>
     </ClCompile>
@@ -77,6 +80,15 @@
     </ClCompile>
     <ClCompile Include="Color.cpp">
       <Filter>DataTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="TurtleWindow.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="DefaultMesh.cpp">
+      <Filter>Renderer</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
