@@ -10,7 +10,7 @@ namespace turtle
 	{
 		void WindowTest::Construct()
 		{
-			const auto window = new Window();
+			const auto window = Window::New();
 			window->Construct();
 
 		}

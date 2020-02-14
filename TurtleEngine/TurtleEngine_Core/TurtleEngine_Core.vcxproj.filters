@@ -14,6 +14,9 @@
     <Filter Include="DataTypes">
       <UniqueIdentifier>{61a3b010-56f4-4097-b455-18eb6215847a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Renderer">
+      <UniqueIdentifier>{fa71103f-11b8-40c4-8560-1a778fc94d1f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -40,6 +43,15 @@
     <ClInclude Include="Errors.h">
       <Filter>Debug</Filter>
     </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGlRenderer.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>DataTypes</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Window.cpp">
@@ -59,6 +71,12 @@
     </ClCompile>
     <ClCompile Include="Errors.cpp">
       <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGlRenderer.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Color.cpp">
+      <Filter>DataTypes</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
