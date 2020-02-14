@@ -4,6 +4,7 @@
 
 #include "Mesh.h"
 #include "DefaultMesh.h"
+#include "Shape.h"
 
 #include "SFML/OpenGL.hpp"
 #include "SFML/System.hpp"
@@ -59,6 +60,7 @@ namespace turtle
 					return;
 				}
 
+								
 				glMatrixMode(GL_PROJECTION);
 				glLoadIdentity();
 
@@ -72,6 +74,7 @@ namespace turtle
 				glColorPointer(4, GL_FLOAT, 7 * sizeof(Float), colors);
 
 
+
 				glDisableClientState(GL_NORMAL_ARRAY);
 				glDisableClientState(GL_TEXTURE_COORD_ARRAY);
 
@@ -82,6 +85,14 @@ namespace turtle
 
 				glDrawArrays(GL_TRIANGLES, 0, 36);
 				
+			}
+		}
+
+		void OpenGlRenderer::DrawShape(renderer::Shape * shape)
+		{
+			if (shape != nullptr)
+			{
+				shape->Render();
 			}
 		}
 

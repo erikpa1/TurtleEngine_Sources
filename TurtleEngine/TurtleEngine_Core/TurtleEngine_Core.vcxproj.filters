@@ -58,6 +58,9 @@
     <ClInclude Include="DefaultMesh.h">
       <Filter>Renderer</Filter>
     </ClInclude>
+    <ClInclude Include="Shape.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -88,6 +91,9 @@
       <Filter>Renderer</Filter>
     </ClCompile>
     <ClCompile Include="DefaultMesh.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Shape.cpp">
       <Filter>Renderer</Filter>
     </ClCompile>
   </ItemGroup>

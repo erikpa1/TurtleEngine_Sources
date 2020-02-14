@@ -12,6 +12,7 @@ namespace turtle
 	namespace renderer
 	{
 		class Mesh;
+		class Shape;
 
 		class Renderer
 		{
@@ -23,6 +24,7 @@ namespace turtle
 			virtual void Clear() = 0;
 			virtual void ViewportResized(Double width, Double height) = 0;
 			virtual void DrawMesh(renderer::Mesh * mesh) = 0;
+			virtual void DrawShape(renderer::Shape * shape) = 0;
 		};
 	}
 }

@@ -8,6 +8,7 @@
 #include "SFML/OpenGL.hpp"
 
 #include "DefaultMesh.h"
+#include "Shape.h"
 
 using namespace sf;
 using namespace std;
@@ -46,6 +47,9 @@ namespace turtle
 			DefaultMesh * mesh = DefaultMesh::New();
 			mesh->Construct();
 
+			renderer::Shape * shape = renderer::Shape::New();
+			shape->Construct();
+
 			while (running)
 			{
 
@@ -62,12 +66,16 @@ namespace turtle
 					}
 				}				
 
-				_window->pushGLStates();
-				_renderer->DrawMesh(mesh);
-				_window->popGLStates();
-				_window->pushGLStates();
-				_window->popGLStates();
+				
+				//_renderer->DrawMesh(mesh);
+				_renderer->DrawShape(shape);
+
+				//_window->pushGLStates();	
+				//_window->popGLStates();
+				//_window->pushGLStates();
+				//_window->popGLStates();
 				//_renderer->Clear();
+
 
 				_window->display();
 			}

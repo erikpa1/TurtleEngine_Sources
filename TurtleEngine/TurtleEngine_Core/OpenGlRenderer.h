@@ -34,6 +34,7 @@ namespace turtle
 			void ViewportResized(Double width, Double height) override;
 
 			void DrawMesh(renderer::Mesh * mesh) override;
+			void DrawShape(renderer::Shape * shape) override;
 
 
 
