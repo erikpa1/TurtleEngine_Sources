@@ -12,7 +12,7 @@ namespace turtle
 			WindowTest() = default;
 
 			void Construct();
-			void DllTest();
+
 
 		};
 

@@ -142,7 +142,7 @@
       <PreprocessorDefinitions>NDEBUG;TURTLEENGINECORE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\..\TurtleEngine_ExternalLibraries\sfml\include;$(SolutionDir)..\..\TurtleEngine_ExternalLibraries\glew-2.1.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\TurtleEngine_ExternalLibraries\glew-2.1.0\include;$(SolutionDir)..\..\TurtleEngine_ExternalLibraries\pybind11\include;$(SolutionDir)..\..\TurtleEngine_ExternalLibraries\sfml\include;$(SolutionDir)..\..\TurtleEngine_Libraries\python\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

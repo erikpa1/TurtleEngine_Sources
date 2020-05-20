@@ -5,11 +5,11 @@
 using namespace turtle;
 using namespace turtle::gui;
 
+
 int main()
 {
 	try
 	{
-
 		WindowTest * windowTest = new WindowTest();
 		windowTest->Construct();
 	}

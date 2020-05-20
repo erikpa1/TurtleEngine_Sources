@@ -15,11 +15,6 @@ namespace turtle
 
 		}
 
-		void WindowTest::DllTest()
-		{
-			std::cout << "Hello";
-
-		}
 	}
 }
 

@@ -1,13 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="GUI">
-      <UniqueIdentifier>{1c43d91a-cb86-497c-b069-337c5f9369be}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Precompiled">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
     <Filter Include="Debug">
       <UniqueIdentifier>{704bd333-d89b-495f-bca9-8ead5b90a255}</UniqueIdentifier>
     </Filter>
@@ -17,22 +10,32 @@
     <Filter Include="Renderer">
       <UniqueIdentifier>{fa71103f-11b8-40c4-8560-1a778fc94d1f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Gui">
+      <UniqueIdentifier>{1c43d91a-cb86-497c-b069-337c5f9369be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python">
+      <UniqueIdentifier>{1ab4a9d9-7f3f-4c68-ae58-39a33fc93de0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zPrecompiled">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
-      <Filter>Precompiled</Filter>
+      <Filter>zPrecompiled</Filter>
     </ClInclude>
     <ClInclude Include="pch.h">
-      <Filter>Precompiled</Filter>
+      <Filter>zPrecompiled</Filter>
     </ClInclude>
     <ClInclude Include="WindowTest.h">
-      <Filter>GUI</Filter>
+      <Filter>Gui</Filter>
     </ClInclude>
     <ClInclude Include="Log.h">
       <Filter>Debug</Filter>
     </ClInclude>
     <ClInclude Include="Turtle.h">
-      <Filter>Precompiled</Filter>
+      <Filter>zPrecompiled</Filter>
     </ClInclude>
     <ClInclude Include="DataTypes.h">
       <Filter>DataTypes</Filter>
@@ -50,7 +53,7 @@
       <Filter>DataTypes</Filter>
     </ClInclude>
     <ClInclude Include="TurtleWindow.h">
-      <Filter>GUI</Filter>
+      <Filter>Gui</Filter>
     </ClInclude>
     <ClInclude Include="Mesh.h">
       <Filter>Renderer</Filter>
@@ -64,13 +67,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
-      <Filter>Precompiled</Filter>
+      <Filter>zPrecompiled</Filter>
     </ClCompile>
     <ClCompile Include="pch.cpp">
-      <Filter>Precompiled</Filter>
+      <Filter>zPrecompiled</Filter>
     </ClCompile>
     <ClCompile Include="WindowTest.cpp">
-      <Filter>GUI</Filter>
+      <Filter>Gui</Filter>
     </ClCompile>
     <ClCompile Include="Log.cpp">
       <Filter>Debug</Filter>
@@ -85,7 +88,7 @@
       <Filter>DataTypes</Filter>
     </ClCompile>
     <ClCompile Include="TurtleWindow.cpp">
-      <Filter>GUI</Filter>
+      <Filter>Gui</Filter>
     </ClCompile>
     <ClCompile Include="Mesh.cpp">
       <Filter>Renderer</Filter>
