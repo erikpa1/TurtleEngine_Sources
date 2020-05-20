@@ -1,5 +1,5 @@
 #pragma once
-#include "Turtle.h"
+#include "TurtleObject.h"
 
 
 namespace sf
@@ -17,7 +17,7 @@ namespace turtle
 
 	namespace gui
 	{
-		class TurtleExport TurtleWindow
+		class TurtleExport TurtleWindow : public TurtleObject
 		{
 
 		public:
@@ -35,6 +35,14 @@ namespace turtle
 
 			sf::RenderWindow * _window;
 			renderer::Renderer * _renderer;
+
+		public:
+
+			void DrawTestMesh();
+
+		private:
+
+			Bool _running;
 
 
 

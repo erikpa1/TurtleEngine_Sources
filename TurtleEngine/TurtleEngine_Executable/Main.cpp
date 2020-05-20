@@ -1,6 +1,7 @@
-#include "WindowTest.h"
 #include <exception>
 #include <iostream>
+
+#include "TurtleWindowTest.h"
 
 using namespace turtle;
 using namespace turtle::gui;
@@ -10,8 +11,9 @@ int main()
 {
 	try
 	{
-		WindowTest * windowTest = new WindowTest();
+		TurtleWindowTest * windowTest = new TurtleWindowTest();
 		windowTest->Construct();
+		windowTest->RunTestDraw();
 	}
 	catch (const std::exception & e)
 	{

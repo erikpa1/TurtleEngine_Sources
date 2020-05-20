@@ -64,6 +64,9 @@
     <ClInclude Include="Shape.h">
       <Filter>Renderer</Filter>
     </ClInclude>
+    <ClInclude Include="TurtleWindowPool.h">
+      <Filter>Gui</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -98,6 +101,9 @@
     </ClCompile>
     <ClCompile Include="Shape.cpp">
       <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="TurtleWindowPool.cpp">
+      <Filter>Gui</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

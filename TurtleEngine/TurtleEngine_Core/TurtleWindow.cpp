@@ -43,15 +43,32 @@ namespace turtle
 			_renderer = OpenGlRenderer::New();
 			_renderer->Construct();
 
-			bool running = true;
+			_running = true;
 
+
+
+
+
+		}
+		void TurtleWindow::Destruct()
+		{
+			_running = false;
+			_renderer->Destruct();
+			
+			delete _window;
+
+			
+		}
+
+		void TurtleWindow::DrawTestMesh()
+		{
 			DefaultMesh * mesh = DefaultMesh::New();
 			mesh->Construct();
 
 			renderer::Shape * shape = renderer::Shape::New();
 			shape->Construct();
 
-			while (running)
+			while (_running)
 			{
 
 				sf::Event event;
@@ -59,15 +76,15 @@ namespace turtle
 				{
 					if (event.type == sf::Event::Closed)
 					{
-						running = false;
+						_running = false;
 					}
 					else if (event.type == sf::Event::Resized)
 					{
 						_renderer->ViewportResized(event.size.width, event.size.height);
 					}
-				}				
+				}
 
-				
+
 				//_renderer->DrawMesh(mesh);
 				_renderer->DrawShape(shape);
 
@@ -80,11 +97,6 @@ namespace turtle
 
 				_window->display();
 			}
-
-		}
-		void TurtleWindow::Destruct()
-		{
-
 		}
 	}
 }

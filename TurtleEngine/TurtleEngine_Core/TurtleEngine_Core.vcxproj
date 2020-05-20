@@ -168,6 +168,7 @@
     <ClInclude Include="Shape.h" />
     <ClInclude Include="Turtle.h" />
     <ClInclude Include="TurtleWindow.h" />
+    <ClInclude Include="TurtleWindowPool.h" />
     <ClInclude Include="WindowTest.h" />
   </ItemGroup>
   <ItemGroup>
@@ -186,6 +187,7 @@
     </ClCompile>
     <ClCompile Include="Shape.cpp" />
     <ClCompile Include="TurtleWindow.cpp" />
+    <ClCompile Include="TurtleWindowPool.cpp" />
     <ClCompile Include="WindowTest.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
