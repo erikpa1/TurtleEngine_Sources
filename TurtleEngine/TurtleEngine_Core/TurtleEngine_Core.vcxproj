@@ -143,6 +143,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>$(SolutionDir)..\..\TurtleEngine_ExternalLibraries\glew-2.1.0\include;$(SolutionDir)..\..\TurtleEngine_ExternalLibraries\pybind11\include;$(SolutionDir)..\..\TurtleEngine_ExternalLibraries\sfml\include;$(SolutionDir)..\..\TurtleEngine_Libraries\python\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <EnableModules>true</EnableModules>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -155,29 +156,42 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Button.h" />
     <ClInclude Include="Color.h" />
     <ClInclude Include="DataTypes.h" />
     <ClInclude Include="DefaultMesh.h" />
+    <ClInclude Include="Element.h" />
     <ClInclude Include="Errors.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="Keyboard.h" />
+    <ClInclude Include="Layout.h" />
     <ClInclude Include="Log.h" />
     <ClInclude Include="Mesh.h" />
+    <ClInclude Include="Mouse.h" />
     <ClInclude Include="OpenGlRenderer.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Renderer.h" />
     <ClInclude Include="Shape.h" />
+    <ClInclude Include="StrongShell.h" />
     <ClInclude Include="Turtle.h" />
+    <ClInclude Include="TurtleObject.h" />
     <ClInclude Include="TurtleWindow.h" />
     <ClInclude Include="TurtleWindowPool.h" />
-    <ClInclude Include="WindowTest.h" />
+    <ClInclude Include="TurtleWindowTest.h" />
+    <ClInclude Include="WeakShell.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Button.cpp" />
     <ClCompile Include="Color.cpp" />
     <ClCompile Include="DefaultMesh.cpp" />
     <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="Element.cpp" />
     <ClCompile Include="Errors.cpp" />
+    <ClCompile Include="Keyboard.cpp" />
+    <ClCompile Include="Layout.cpp" />
     <ClCompile Include="Log.cpp" />
     <ClCompile Include="Mesh.cpp" />
+    <ClCompile Include="Mouse.cpp" />
     <ClCompile Include="OpenGlRenderer.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -186,9 +200,10 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="Shape.cpp" />
+    <ClCompile Include="TurtleObject.cpp" />
     <ClCompile Include="TurtleWindow.cpp" />
     <ClCompile Include="TurtleWindowPool.cpp" />
-    <ClCompile Include="WindowTest.cpp" />
+    <ClCompile Include="TurtleWindowTest.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

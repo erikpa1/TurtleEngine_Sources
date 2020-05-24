@@ -20,6 +20,9 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
+    <Filter Include="Memory">
+      <UniqueIdentifier>{c473b3fd-dcb7-4651-af44-c82c3836d6cb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -27,9 +30,6 @@
     </ClInclude>
     <ClInclude Include="pch.h">
       <Filter>zPrecompiled</Filter>
-    </ClInclude>
-    <ClInclude Include="WindowTest.h">
-      <Filter>Gui</Filter>
     </ClInclude>
     <ClInclude Include="Log.h">
       <Filter>Debug</Filter>
@@ -67,6 +67,33 @@
     <ClInclude Include="TurtleWindowPool.h">
       <Filter>Gui</Filter>
     </ClInclude>
+    <ClInclude Include="TurtleWindowTest.h">
+      <Filter>Gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Element.h">
+      <Filter>Gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Layout.h">
+      <Filter>Gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>Gui</Filter>
+    </ClInclude>
+    <ClInclude Include="TurtleObject.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="StrongShell.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="WeakShell.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Mouse.h">
+      <Filter>Gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Keyboard.h">
+      <Filter>Gui</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -74,9 +101,6 @@
     </ClCompile>
     <ClCompile Include="pch.cpp">
       <Filter>zPrecompiled</Filter>
-    </ClCompile>
-    <ClCompile Include="WindowTest.cpp">
-      <Filter>Gui</Filter>
     </ClCompile>
     <ClCompile Include="Log.cpp">
       <Filter>Debug</Filter>
@@ -103,6 +127,27 @@
       <Filter>Renderer</Filter>
     </ClCompile>
     <ClCompile Include="TurtleWindowPool.cpp">
+      <Filter>Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="TurtleWindowTest.cpp">
+      <Filter>Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="Element.cpp">
+      <Filter>Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="Layout.cpp">
+      <Filter>Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="TurtleObject.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Mouse.cpp">
+      <Filter>Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="Keyboard.cpp">
       <Filter>Gui</Filter>
     </ClCompile>
   </ItemGroup>

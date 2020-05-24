@@ -4,6 +4,14 @@
 
 namespace turtle
 {
+	void TurtleObject::Construct()
+	{
+
+	}
+	void TurtleObject::Destruct()
+	{
+
+	}
 	void TurtleObject::IncrementCount()
 	{
 		_referenceCount++;

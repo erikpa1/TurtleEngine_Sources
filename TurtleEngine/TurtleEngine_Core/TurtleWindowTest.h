@@ -12,11 +12,12 @@ namespace turtle
 
 		public:
 
-			TurtleWindowTest() = default;
+			TurtleWindowTest();
 			~TurtleWindowTest();
 
 			void Construct();
 			void RunTestDraw();
+			void RunButtonTestDraw();
 
 		private:
 

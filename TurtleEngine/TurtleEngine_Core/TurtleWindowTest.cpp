@@ -8,6 +8,11 @@ namespace turtle
 {
 	namespace gui
 	{
+		TurtleWindowTest::TurtleWindowTest()
+		{
+
+		}
+
 		TurtleWindowTest::~TurtleWindowTest()
 		{
 			delete _window;
@@ -23,6 +28,10 @@ namespace turtle
 		void TurtleWindowTest::RunTestDraw()
 		{
 			_window->DrawTestMesh();
+		}
+
+		void TurtleWindowTest::RunButtonTestDraw()
+		{
 		}
 
 	}

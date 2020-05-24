@@ -27,6 +27,7 @@ namespace turtle
 			void Construct();
 			void Destruct();
 
+
 		protected:
 
 			TurtleWindow() = default;
