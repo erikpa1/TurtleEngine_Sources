@@ -1,17 +1,21 @@
 #pragma once
-#include "Turtle.h"
+#include "TurtleObject.h"
 
 namespace turtle
 {
 	namespace python
 	{
-		class TurtleExport PythonInterpreter
+		class TurtleExport PythonInterpreter : public TurtleObject
 		{
 
+		public:
+			void Construct();
+			void Destruct();
+
+			void Run();
 
 		};
 
 	}
 }
-
 

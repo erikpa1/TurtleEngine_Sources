@@ -85,8 +85,8 @@ namespace turtle
 				}
 
 
-				//_renderer->DrawMesh(mesh);
-				_renderer->DrawShape(shape);
+				_renderer->DrawMesh(mesh);
+				//_renderer->DrawShape(shape);
 
 				//_window->pushGLStates();	
 				//_window->popGLStates();

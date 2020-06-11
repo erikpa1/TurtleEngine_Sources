@@ -24,5 +24,9 @@ namespace turtle
 			glVertex2f(0.5f, 0.5f);
 			glEnd();
 		}
+		void Shape::BindArray()
+		{
+
+		}
 	}
 }

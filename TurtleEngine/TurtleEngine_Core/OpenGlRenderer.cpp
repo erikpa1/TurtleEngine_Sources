@@ -45,7 +45,7 @@ namespace turtle
 
 		void OpenGlRenderer::ViewportResized(Double width, Double height)
 		{
-			glViewport(0, 0, width, height);
+			glViewport(0, 0, static_cast<GLsizei>(width), static_cast<GLsizei>(height));
 		}
 
 		void OpenGlRenderer::DrawMesh(renderer::Mesh * mesh)

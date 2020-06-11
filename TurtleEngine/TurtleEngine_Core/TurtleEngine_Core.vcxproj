@@ -142,8 +142,8 @@
       <PreprocessorDefinitions>NDEBUG;TURTLEENGINECORE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\..\TurtleEngine_ExternalLibraries\glew-2.1.0\include;$(SolutionDir)..\..\TurtleEngine_ExternalLibraries\pybind11\include;$(SolutionDir)..\..\TurtleEngine_ExternalLibraries\sfml\include;$(SolutionDir)..\..\TurtleEngine_Libraries\python\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <EnableModules>true</EnableModules>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\TurtleEngine_ExternalLibraries\glew-2.1.0\include;$(SolutionDir)..\..\TurtleEngine_ExternalLibraries\sfml\include;$(SolutionDir)..\..\TurtleEngine_Libraries\python\include;$(SolutionDir)..\..\TurtleEngine_ExternalLibraries\pybind11\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <EnableModules>false</EnableModules>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -170,6 +170,8 @@
     <ClInclude Include="Mouse.h" />
     <ClInclude Include="OpenGlRenderer.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="PythonInterpreter.h" />
+    <ClInclude Include="PythonRegistration.h" />
     <ClInclude Include="Renderer.h" />
     <ClInclude Include="Shape.h" />
     <ClInclude Include="StrongShell.h" />
@@ -199,6 +201,8 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="PythonInterpreter.cpp" />
+    <ClCompile Include="Registration_Gui.cpp" />
     <ClCompile Include="Shape.cpp" />
     <ClCompile Include="TurtleObject.cpp" />
     <ClCompile Include="TurtleWindow.cpp" />

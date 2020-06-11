@@ -20,6 +20,7 @@ namespace turtle
 		public:
 
 			void Render();
+			void BindArray();
 		};
 
 	}
