@@ -15,8 +15,8 @@ namespace turtle
 
 		void PythonInterpreter::Construct()
 		{
-			//Py_SetProgramName(nullptr);
-
+			//Py_SetProgramName();
+			//Py_SetPath(L"python/Lib");
 		}
 
 		void PythonInterpreter::Destruct()
@@ -29,6 +29,10 @@ namespace turtle
 			try
 			{
 				//auto command = "import example \n print(add(10 + 20))\n";
+				Py_SetPath(L"python/");
+				//auto sys = py::module::import("sys");
+				//sys.attr("path").attr("insert")(0, "D:\TurtleEngine\TurtleEngine_Scripts");
+
 				auto command = "10 + 2";
 				Py_Initialize();
 				PyRun_SimpleString(command);

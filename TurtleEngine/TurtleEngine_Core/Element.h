@@ -21,8 +21,8 @@ namespace turtle
 			Int GetPosY();
 
 			//Size
-			void SetSizeX(Int posX);
-			void SetSizeY(Int posY);
+			void SetSizeX(Int sizeX);
+			void SetSizeY(Int sizeY);
 
 			Double GetSizeX();
 			Double GetSizeY();
@@ -34,6 +34,12 @@ namespace turtle
 
 			Bool IsVisible();
 
+			virtual Bool CheckSelection(Int mouseX, Int mouseY);
+
+		public:
+
+			void Draw();
+			void Update();
 			
 		private:
 
@@ -48,11 +54,9 @@ namespace turtle
 			String name;
 			String id;
 
-
-
 		private:
 
-			std::vector<Element> _child;
+			std::vector<Element> _children;
 
 
 						

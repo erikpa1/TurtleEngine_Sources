@@ -23,6 +23,12 @@
     <Filter Include="Memory">
       <UniqueIdentifier>{c473b3fd-dcb7-4651-af44-c82c3836d6cb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Peripherals">
+      <UniqueIdentifier>{cb5ae592-092d-492e-b8ed-f09de4bc0044}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{4e825bfd-cbec-481a-af0d-ce6fde48ca67}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -88,17 +94,20 @@
     <ClInclude Include="WeakShell.h">
       <Filter>Memory</Filter>
     </ClInclude>
-    <ClInclude Include="Mouse.h">
-      <Filter>Gui</Filter>
-    </ClInclude>
-    <ClInclude Include="Keyboard.h">
-      <Filter>Gui</Filter>
-    </ClInclude>
     <ClInclude Include="PythonInterpreter.h">
       <Filter>Python</Filter>
     </ClInclude>
     <ClInclude Include="PythonRegistration.h">
       <Filter>Python</Filter>
+    </ClInclude>
+    <ClInclude Include="Keyboard.h">
+      <Filter>Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="Mouse.h">
+      <Filter>Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="Turtle2DMath.h">
+      <Filter>Math</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -150,17 +159,17 @@
     <ClCompile Include="TurtleObject.cpp">
       <Filter>Memory</Filter>
     </ClCompile>
-    <ClCompile Include="Mouse.cpp">
-      <Filter>Gui</Filter>
-    </ClCompile>
-    <ClCompile Include="Keyboard.cpp">
-      <Filter>Gui</Filter>
-    </ClCompile>
     <ClCompile Include="Registration_Gui.cpp">
       <Filter>Python</Filter>
     </ClCompile>
     <ClCompile Include="PythonInterpreter.cpp">
       <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="Keyboard.cpp">
+      <Filter>Peripherals</Filter>
+    </ClCompile>
+    <ClCompile Include="Mouse.cpp">
+      <Filter>Peripherals</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

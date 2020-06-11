@@ -19,14 +19,11 @@ int main()
 
 		TurtleWindowTest * windowTest = new TurtleWindowTest();
 		windowTest->Construct();
-		windowTest->RunTestDraw();
 			   
 	}
 	catch (const std::exception & e)
 	{
-		std::cerr << e.what();
-
-	
+		std::cerr << e.what();	
 	}
 
 
