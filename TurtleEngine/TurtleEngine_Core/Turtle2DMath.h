@@ -11,7 +11,7 @@ namespace turtle
 			template<typename TYPE>
 			static Bool IsInRectangle(TYPE posX, TYPE posY, TYPE sizeX, TYPE sizeY, TYPE selectorX, TYPE selectorY)
 			{
-				return ((poxX >= selectorX && posX + sizeX <= selectorX) && (poxY <= selectorY && posY + sizeY >= selectorY))
+				return ((posX >= selectorX && posX + sizeX <= selectorX) && (posY <= selectorY && posY + sizeY >= selectorY));
 			}
 
 			template<typename TYPE>

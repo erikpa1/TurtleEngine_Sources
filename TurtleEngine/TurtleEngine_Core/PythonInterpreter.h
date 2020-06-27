@@ -9,10 +9,10 @@ namespace turtle
 		{
 
 		public:
-			void Construct();
-			void Destruct();
+			static void Construct();
+			static void Destruct();
 
-			void Run();
+			static void Run();
 
 		};
 

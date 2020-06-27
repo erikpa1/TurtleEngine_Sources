@@ -71,7 +71,7 @@ namespace turtle
 
 		Bool Element::CheckSelection(Int mouseX, Int mouseY)
 		{
-			return Math::IsInRectangle<Int>(_posX, _posY, _sizeX, _sizeY, mouseX, mouseY);
+			return Math::IsInRectangle<Int>(_posX, _posY, static_cast<Int>(_sizeX), static_cast<Int>(_sizeY), mouseX, mouseY);
 		}
 
 		void Element::Draw()

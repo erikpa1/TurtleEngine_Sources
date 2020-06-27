@@ -13,12 +13,12 @@ int main()
 {
 	try
 	{
-		//PythonInterpreter interpeter;
-		//interpeter.Construct();
-		//interpeter.Run();
+		//PythonInterpreter::Construct();
+		//PythonInterpreter::Run();
 
 		TurtleWindowTest * windowTest = new TurtleWindowTest();
 		windowTest->Construct();
+		windowTest->RunTestDraw();
 			   
 	}
 	catch (const std::exception & e)

@@ -29,13 +29,19 @@ namespace turtle
 			try
 			{
 				//auto command = "import example \n print(add(10 + 20))\n";
-				Py_SetPath(L"python/");
-				//auto sys = py::module::import("sys");
-				//sys.attr("path").attr("insert")(0, "D:\TurtleEngine\TurtleEngine_Scripts");
+				//Py_SetPath(L"python/");
 
-				auto command = "10 + 2";
 				Py_Initialize();
-				PyRun_SimpleString(command);
+				Py_SetPath(L"D:/TurtleEngine/TurtleEngine_Libraries/python/python.exe");
+				Py_SetProgramName(L"Turtle engine");  /* optional but recommended */
+
+
+				auto sys = py::module::import("sys");
+				sys.attr("path").attr("insert")(0, "D:\TurtleEngine\TurtleEngine_Scripts");
+
+
+				//String order = "import sys \n  print(sys.path)";
+				//PyRun_SimpleString(order.c_str());
 			}
 			catch (const std::exception e)
 			{
