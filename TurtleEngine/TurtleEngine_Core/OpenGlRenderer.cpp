@@ -60,8 +60,11 @@ namespace turtle
 					return;
 				}
 
-								
-				glMatrixMode(GL_PROJECTION);
+				//				
+				//glMatrixMode(GL_PROJECTION);
+				//glLoadIdentity();
+
+				glMatrixMode(GL_MODELVIEW);
 				glLoadIdentity();
 
 				GLfloat ratio = static_cast<float>(800) / 600;
@@ -72,17 +75,11 @@ namespace turtle
 
 				glVertexPointer(3, GL_FLOAT, 7 * sizeof(Float), vertices);
 				glColorPointer(4, GL_FLOAT, 7 * sizeof(Float), colors);
-
-
-
-				glDisableClientState(GL_NORMAL_ARRAY);
-				glDisableClientState(GL_TEXTURE_COORD_ARRAY);
+							   
+				//glDisableClientState(GL_NORMAL_ARRAY);
+				//glDisableClientState(GL_TEXTURE_COORD_ARRAY);
 
 				glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);		
-		
-				glMatrixMode(GL_MODELVIEW);
-				glLoadIdentity();
-
 				glDrawArrays(GL_TRIANGLES, 0, 36);
 				
 			}

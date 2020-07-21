@@ -12,6 +12,7 @@ namespace turtle
 	namespace renderer
 	{
 		class Renderer;
+		class TurtleShader;
 	}
 
 
@@ -36,6 +37,7 @@ namespace turtle
 
 			sf::RenderWindow * _window;
 			renderer::Renderer * _renderer;
+			renderer::TurtleShader * _shader;
 
 		public:
 

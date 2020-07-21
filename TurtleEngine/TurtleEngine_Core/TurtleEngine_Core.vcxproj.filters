@@ -29,6 +29,9 @@
     <Filter Include="Math">
       <UniqueIdentifier>{4e825bfd-cbec-481a-af0d-ce6fde48ca67}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Filesystem">
+      <UniqueIdentifier>{d1d7c748-2694-472b-a82e-a811deb157c7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -109,6 +112,9 @@
     <ClInclude Include="Turtle2DMath.h">
       <Filter>Math</Filter>
     </ClInclude>
+    <ClInclude Include="TurtleShader.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -170,6 +176,9 @@
     </ClCompile>
     <ClCompile Include="Mouse.cpp">
       <Filter>Peripherals</Filter>
+    </ClCompile>
+    <ClCompile Include="TurtleShader.cpp">
+      <Filter>Renderer</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

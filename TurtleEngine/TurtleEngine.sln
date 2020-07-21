@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TurtleEngine_Core", "Turtle
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TurtleEngine_Executable", "TurtleEngine_Executable\TurtleEngine_Executable.vcxproj", "{6922D133-FB16-458B-9BC4-9932BD210B15}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Shaders", "..\..\TurtleEngine_Shaders\Shaders.vcxitems", "{7389FB3C-4D21-4737-9362-0C872DACC52D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
