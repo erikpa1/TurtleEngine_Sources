@@ -144,6 +144,7 @@
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>$(SolutionDir)..\..\TurtleEngine_ExternalLibraries\glew-2.1.0\include;$(SolutionDir)..\..\TurtleEngine_ExternalLibraries\sfml\include;$(SolutionDir)..\..\TurtleEngine_Libraries\python\include;$(SolutionDir)..\..\TurtleEngine_ExternalLibraries\pybind11\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <EnableModules>false</EnableModules>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
