@@ -1,4 +1,5 @@
 #pragma once
+#include "MathDataTypes.h"
 
 namespace turtle
 {
@@ -10,6 +11,14 @@ namespace turtle
 	typedef std::string String;
 
 	typedef bool Bool;
+
+	typedef Vec2<Double> Double2;
+	typedef Vec3<Double> Double3;
+	typedef Vec4<Double> Double4;
+
+	typedef Vec2<Int> Int2;
+	typedef Vec3<Int> Int3;
+	typedef Vec4<Int> Int4;
 
 
 }

@@ -115,6 +115,9 @@
     <ClInclude Include="TurtleShader.h">
       <Filter>Renderer</Filter>
     </ClInclude>
+    <ClInclude Include="MathDataTypes.h">
+      <Filter>Math</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -179,6 +182,12 @@
     </ClCompile>
     <ClCompile Include="TurtleShader.cpp">
       <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Registration.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="Registration_Math.cpp">
+      <Filter>Python</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

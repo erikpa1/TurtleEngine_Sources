@@ -130,7 +130,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)TurtleEngine_Core</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)TurtleEngine_Core;$(SolutionDir)..\..\TurtleEngine_ExternalLibraries\pybind11\include;$(SolutionDir)..\..\TurtleEngine_Libraries\python\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

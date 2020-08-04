@@ -10,11 +10,12 @@ namespace turtle
 	namespace python
 	{
 		template<class MY_CLASS>
-		void Register_Class(py::module & m, const String & className)
+		py::class_<MY_CLASS> Register_Class(py::module & m, const String & className)
 		{
 			py::class_<MY_CLASS> myClass(m, className.c_str());
 			return myClass;
 		}
+
 	}
 }
 

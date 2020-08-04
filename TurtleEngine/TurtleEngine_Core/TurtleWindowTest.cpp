@@ -27,6 +27,7 @@ namespace turtle
 
 		void TurtleWindowTest::RunTestDraw()
 		{
+			//std::cout << "Before test";
 			_window->DrawTestMesh();
 		}
 

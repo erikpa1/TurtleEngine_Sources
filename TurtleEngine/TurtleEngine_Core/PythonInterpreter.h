@@ -1,5 +1,7 @@
 #pragma once
 #include "TurtleObject.h"
+#include <pybind11/pybind11.h>
+
 
 namespace turtle
 {
@@ -12,6 +14,7 @@ namespace turtle
 			static void Construct();
 			static void Destruct();
 
+			static void Register(pybind11::module & parentModule);
 			static void Run();
 
 		};

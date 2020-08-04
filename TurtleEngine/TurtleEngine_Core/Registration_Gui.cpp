@@ -9,19 +9,23 @@ namespace py = pybind11;
 
 namespace turtle
 {
+	using namespace gui;
+
 	namespace python
 	{
-		//Register_Class<TurtleWindow>(m, "TurtleWindow");
-		int add(int i, int j)
+		void Register_Turtle_Gui(py::module & m)
 		{
-			return i + j;
+
+
+			Register_Class<TurtleWindow>(m, "TurtleWindow")
+				.def_static("New", &TurtleWindow::New)
+				.def("Construct", &TurtleWindow::Construct)
+				.def("DrawTestMesh", &TurtleWindow::DrawTestMesh)
+				;
+
+
 		}
 
-		PYBIND11_MODULE(example, m)
-		{
-			m.doc() = "pybind11 example plugin"; // optional module docstring
 
-			m.def("add", &add, "A function which adds two numbers");
-		}
 	}
 }

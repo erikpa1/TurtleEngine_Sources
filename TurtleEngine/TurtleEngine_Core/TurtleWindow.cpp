@@ -41,7 +41,7 @@ namespace turtle
 			_window = new sf::RenderWindow(sf::VideoMode(800, 600), "Turtle Engine", sf::Style::Default, settings);
 			_window->setActive(true);
 			_window->setVerticalSyncEnabled(true);			
-			
+
 			_renderer = OpenGlRenderer::New();
 			_renderer->Construct();
 

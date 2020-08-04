@@ -9,30 +9,44 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TurtleEngine_Executable", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Shaders", "..\..\TurtleEngine_Shaders\Shaders.vcxitems", "{7389FB3C-4D21-4737-9362-0C872DACC52D}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "TurtleEngine_Scripts", "..\..\TurtleEngine_Scripts\TurtleEngine_Scripts.pyproj", "{FEEAD7E0-9A97-43C4-8E45-F42C5217E10B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7FF13D5F-961F-44F2-B920-4363A03A15ED}.Debug|Any CPU.ActiveCfg = Debug|Win32
 		{7FF13D5F-961F-44F2-B920-4363A03A15ED}.Debug|x64.ActiveCfg = Debug|x64
 		{7FF13D5F-961F-44F2-B920-4363A03A15ED}.Debug|x64.Build.0 = Debug|x64
 		{7FF13D5F-961F-44F2-B920-4363A03A15ED}.Debug|x86.ActiveCfg = Debug|Win32
 		{7FF13D5F-961F-44F2-B920-4363A03A15ED}.Debug|x86.Build.0 = Debug|Win32
+		{7FF13D5F-961F-44F2-B920-4363A03A15ED}.Release|Any CPU.ActiveCfg = Release|Win32
 		{7FF13D5F-961F-44F2-B920-4363A03A15ED}.Release|x64.ActiveCfg = Release|x64
 		{7FF13D5F-961F-44F2-B920-4363A03A15ED}.Release|x64.Build.0 = Release|x64
 		{7FF13D5F-961F-44F2-B920-4363A03A15ED}.Release|x86.ActiveCfg = Release|Win32
 		{7FF13D5F-961F-44F2-B920-4363A03A15ED}.Release|x86.Build.0 = Release|Win32
+		{6922D133-FB16-458B-9BC4-9932BD210B15}.Debug|Any CPU.ActiveCfg = Debug|Win32
 		{6922D133-FB16-458B-9BC4-9932BD210B15}.Debug|x64.ActiveCfg = Debug|x64
 		{6922D133-FB16-458B-9BC4-9932BD210B15}.Debug|x64.Build.0 = Debug|x64
 		{6922D133-FB16-458B-9BC4-9932BD210B15}.Debug|x86.ActiveCfg = Debug|Win32
 		{6922D133-FB16-458B-9BC4-9932BD210B15}.Debug|x86.Build.0 = Debug|Win32
+		{6922D133-FB16-458B-9BC4-9932BD210B15}.Release|Any CPU.ActiveCfg = Release|Win32
 		{6922D133-FB16-458B-9BC4-9932BD210B15}.Release|x64.ActiveCfg = Release|x64
 		{6922D133-FB16-458B-9BC4-9932BD210B15}.Release|x64.Build.0 = Release|x64
 		{6922D133-FB16-458B-9BC4-9932BD210B15}.Release|x86.ActiveCfg = Release|Win32
 		{6922D133-FB16-458B-9BC4-9932BD210B15}.Release|x86.Build.0 = Release|Win32
+		{FEEAD7E0-9A97-43C4-8E45-F42C5217E10B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEEAD7E0-9A97-43C4-8E45-F42C5217E10B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FEEAD7E0-9A97-43C4-8E45-F42C5217E10B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FEEAD7E0-9A97-43C4-8E45-F42C5217E10B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEEAD7E0-9A97-43C4-8E45-F42C5217E10B}.Release|x64.ActiveCfg = Release|Any CPU
+		{FEEAD7E0-9A97-43C4-8E45-F42C5217E10B}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
