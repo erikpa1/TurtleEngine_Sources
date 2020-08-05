@@ -3,10 +3,14 @@
 
 namespace turtle
 {
-	const String & GetLibrariesAbsPath()
+	class FileSystemManager
 	{
-		return "";
+		static const String & GetLibrariesAbsPath()
+		{
+			return "";
+		};
 	};
+
 
 
 
