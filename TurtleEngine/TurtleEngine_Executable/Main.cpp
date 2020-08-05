@@ -3,6 +3,9 @@
 
 #include "TurtleWindowTest.h"
 #include "PythonInterpreter.h"
+#include "Element.h"
+
+#include "Log.h"
 
 #include <pybind11/pybind11.h>
 #include <pybind11/embed.h>
@@ -17,6 +20,12 @@ int main()
 {
 	try
 	{
+
+		StrShell<Element> element = Element::New();
+		//LogError(element->GetPosX());
+		LogErr("Some shit happened");
+		
+
 
 		PythonInterpreter::Construct();
 		PythonInterpreter::Run();

@@ -31,12 +31,12 @@ namespace turtle
 			}
 			catch (const std::exception e)
 			{
-				LogError(e.what());
+				LogErr(e.what());
 
 			}
 			catch (...)
 			{
-				LogError("Some shit happened");
+				LogErr("Some shit happened");
 			}
 		}
 

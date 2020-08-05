@@ -145,6 +145,7 @@
       <AdditionalIncludeDirectories>$(SolutionDir)..\..\TurtleEngine_ExternalLibraries\glew-2.1.0\include;$(SolutionDir)..\..\TurtleEngine_ExternalLibraries\sfml\include;$(SolutionDir)..\..\TurtleEngine_Libraries\python\include;$(SolutionDir)..\..\TurtleEngine_ExternalLibraries\pybind11\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <EnableModules>false</EnableModules>
       <WholeProgramOptimization>true</WholeProgramOptimization>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -159,7 +160,6 @@
   <ItemGroup>
     <ClInclude Include="Button.h" />
     <ClInclude Include="Color.h" />
-    <ClInclude Include="DataTypes.h" />
     <ClInclude Include="DefaultMesh.h" />
     <ClInclude Include="Element.h" />
     <ClInclude Include="Errors.h" />
@@ -168,6 +168,7 @@
     <ClInclude Include="Layout.h" />
     <ClInclude Include="Log.h" />
     <ClInclude Include="MathDataTypes.h" />
+    <ClInclude Include="Paths.h" />
     <ClInclude Include="TurtleShader.h" />
     <ClInclude Include="Turtle2DMath.h" />
     <ClInclude Include="Mesh.h" />
@@ -195,7 +196,6 @@
     <ClCompile Include="Errors.cpp" />
     <ClCompile Include="Keyboard.cpp" />
     <ClCompile Include="Layout.cpp" />
-    <ClCompile Include="Log.cpp" />
     <ClCompile Include="Mesh.cpp" />
     <ClCompile Include="Mouse.cpp" />
     <ClCompile Include="OpenGlRenderer.cpp" />

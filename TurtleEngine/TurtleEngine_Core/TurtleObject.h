@@ -13,6 +13,7 @@ namespace turtle
 
 		void IncrementCount();
 		void DecrementCount();
+		Int GetReferenceCount();
 
 	private:
 

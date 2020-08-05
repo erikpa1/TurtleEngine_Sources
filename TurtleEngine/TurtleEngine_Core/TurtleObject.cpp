@@ -21,4 +21,8 @@ namespace turtle
 	{
 		_referenceCount--;
 	}
+	Int TurtleObject::GetReferenceCount()
+	{
+		return _referenceCount;
+	}
 }

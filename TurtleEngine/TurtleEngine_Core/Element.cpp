@@ -12,6 +12,14 @@ namespace turtle
 {
 	namespace gui
 	{
+		StrShell<Element> Element::New()
+		{
+			return StrShell<Element>(new Element);
+		}
+		void Element::AddElement(const StrShell<Element> & element)
+		{
+			//_elements.push_back(element);
+		}
 		void Element::SetPosX(Int posX)
 		{
 			_posX = posX;

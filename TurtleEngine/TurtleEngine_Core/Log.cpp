@@ -5,18 +5,9 @@
 
 namespace turtle
 {
-	void LogError(const String & text)
-	{
-		std::cout << text;
-	}
 
-	void LogStart()
-	{
-	}
 
-	void LogFinish()
-	{
-	}
+
 
 }
 

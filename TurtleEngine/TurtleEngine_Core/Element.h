@@ -7,9 +7,17 @@ namespace turtle
 	namespace gui
 	{
 
-		class Element : public TurtleObject
+		class TurtleExport Element : public TurtleObject
 		{
 
+		public:
+
+			static StrShell<Element> New();
+			void AddElement(const StrShell<Element> & element);
+
+		private:
+
+			//std::vector<StrShell<Element>> _elements;
 
 		public:
 
@@ -55,9 +63,6 @@ namespace turtle
 			String id;
 
 		private:
-
-			std::vector<Element> _children;
-
 
 						
 		};

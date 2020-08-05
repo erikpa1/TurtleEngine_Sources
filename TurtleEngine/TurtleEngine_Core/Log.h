@@ -1,9 +1,6 @@
 #pragma once
-#include "Turtle.h"
 
-namespace turtle
-{
-	void LogError(const String & text);
-	void LogStart();
-	void LogFinish();
-}
+
+#include <iostream>
+
+#define LogErr(_x_) std::cout << "[E] " << __FUNCTION__ << ": " << __LINE__ << " " << _x_ <<std::endl
