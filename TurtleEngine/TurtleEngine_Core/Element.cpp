@@ -43,6 +43,8 @@ namespace turtle
 				_elements.push_back(element);
 			}
 
+			RecalculateSize();
+
 		}
 		void Element::SetPosX(Int posX)
 		{
@@ -82,19 +84,19 @@ namespace turtle
 		void Element::SetSizeX(Float sizeX)
 		{
 			_sizeX = sizeX;
-			_background->setSize(sf::Vector2f(_sizeX, _sizeY));
+			RecalculateSize();
 		}
 		void Element::SetSizeY(Float sizeY)
 		{
 			_sizeY = sizeY;
-			_background->setSize(sf::Vector2f(_sizeX, _sizeY));
+			RecalculateSize();
 		}
 
 		void Element::SetSize(Float sizeX, Float sizeY)
 		{
 			_sizeY = sizeY;
 			_sizeX = sizeX;
-			_background->setSize(sf::Vector2f(_sizeX, _sizeY));
+			RecalculateSize();
 		}
 
 		Double Element::GetSizeX()
@@ -105,6 +107,23 @@ namespace turtle
 		Double Element::GetSizeY()
 		{
 			return _sizeY;
+		}
+		Float2 Element::GetAbsoluteSize()
+		{
+			auto x = _sizeX;
+			auto y = _sizeY;
+
+			if (x < 0)
+			{
+				x = GetParentAbsoluteSize()._x * std::abs(x);
+			}
+
+			if (y < 0)
+			{
+				y = GetParentAbsoluteSize()._y * std::abs(y);
+			}
+
+			return Float2(x, y);
 		}
 		void Element::SetVisibility(Bool status)
 		{
@@ -124,6 +143,11 @@ namespace turtle
 		Bool Element::IsVisible()
 		{
 			return _isVisible;
+		}
+
+		void Element::SetName(const String & name)
+		{
+			_name = name;
 		}
 
 		Bool Element::CheckSelection(Int mouseX, Int mouseY)
@@ -173,6 +197,64 @@ namespace turtle
 
 		void Element::UpdateInternal()
 		{
+		}
+
+		void Element::RecalculateSize()
+		{
+			auto x = _sizeX;
+			auto y = _sizeY;
+
+			if (x < 0)
+			{
+				x = GetParentAbsoluteSize()._x * std::abs(x);
+			}
+
+			if (y < 0)
+			{
+				y = GetParentAbsoluteSize()._y * std::abs(y);
+			}
+
+			LogInf("Final size of: " << _name << " is: " << x << " " << y);
+			_background->setSize(sf::Vector2f(x, y));
+
+			for (const auto & child : _elements)
+			{
+				child->RecalculateSize();
+			}
+
+
+		}
+
+		Float2 Element::GetParentSize()
+		{
+			if (_parent)
+			{	
+				return Float2(_parent->_sizeX, _parent->_sizeY);
+			}
+			else
+			{
+				if (_parentWindow)
+				{
+					return _parentWindow->GetSize();
+				}
+			}
+			return Float2(0, 0);
+		}
+
+		Float2 Element::GetParentAbsoluteSize()
+		{
+			if (_parent)
+			{
+				return _parent->GetAbsoluteSize();
+			}
+			else
+			{
+				if (_parentWindow)
+				{
+					return _parentWindow->GetSize();
+				}
+			}
+			return Float2(0, 0);
 		}
 
 	}

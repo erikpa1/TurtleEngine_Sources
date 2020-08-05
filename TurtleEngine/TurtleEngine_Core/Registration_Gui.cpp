@@ -35,6 +35,7 @@ namespace turtle
 				.def("SetSize", &Element::SetSize)
 				.def("SetBackgroundColor", &Element::SetBackgroundColor)
 				.def("AddElement", &Element::AddElement)
+				.def("SetName", &Element::SetName)
 
 				;
 

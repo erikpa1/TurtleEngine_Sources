@@ -39,11 +39,6 @@ namespace turtle
 		{
 			LogInf("Constructing window with name: " << "MyWindow");
 
-			_root = StrShare<Element>();
-			_root->SetWindowParent(this);
-			_root->SetSizeX(100);
-			_root->SetSizeY(100);
-
 			sf::ContextSettings settings;
 			settings.depthBits = 24;
 			settings.stencilBits = 8;
@@ -52,6 +47,7 @@ namespace turtle
 			settings.minorVersion = 0;
 
 			_window = new sf::RenderWindow(sf::VideoMode(800, 600), "Turtle Engine", sf::Style::Default, settings);
+
 			_window->setActive(true);
 			_window->setVerticalSyncEnabled(true);
 
@@ -61,9 +57,13 @@ namespace turtle
 			_shader = TurtleShader::New("Test.vert", "Test.frag");
 
 
+			_root = StrShare<Element>();
+			_root->SetName("WindowRoot-TurtleEngine");
+			_root->SetWindowParent(this);
+			_root->SetSize(-1, -1);
+
+
 			_running = true;
-
-
 
 
 
@@ -146,9 +146,9 @@ namespace turtle
 						_running = false;
 					}
 					else if (event.type == sf::Event::Resized)
-					{						
-						_root->SetSizeX(_window->getSize().x);
-						_root->SetSizeY(_window->getSize().y);
+					{
+						_root->RecalculateSize();
+						_window->setTitle("Size: " + std::to_string(_window->getSize().x) + " " + std::to_string(_window->getSize().y));
 						//_renderer->ViewportResized(event.size.width, event.size.height);
 					}
 				}
@@ -160,6 +160,15 @@ namespace turtle
 		sf::RenderWindow * TurtleWindow::GetDrawer()
 		{
 			return _window;
+		}
+		void TurtleWindow::SetSize(Float sizeX, Float sizeY)
+		{
+			_window->setSize(sf::Vector2u(static_cast<Uint>(sizeX), static_cast<Uint>(sizeY)));
+		}
+		Float2 TurtleWindow::GetSize()
+		{
+			const auto & size = _window->getSize();
+			return Float2(size.x, size.y);
 		}
 	}
 }

@@ -51,8 +51,13 @@ namespace turtle
 			void SetSizeY(Float sizeY);
 			void SetSize(Float sizeX, Float sizeY);
 
+
 			Double GetSizeX();
 			Double GetSizeY();
+
+			Float2 GetAbsoluteSize();
+			Float2 GetParentSize();
+			Float2 GetParentAbsoluteSize();
 
 			//Visibility
 			void SetVisibility(Bool status);
@@ -60,6 +65,8 @@ namespace turtle
 			void Hide();
 
 			Bool IsVisible();
+
+			void SetName(const String & name);
 
 			virtual Bool CheckSelection(Int mouseX, Int mouseY);
 
@@ -70,12 +77,20 @@ namespace turtle
 			virtual void DrawInternal();
 			virtual void Update();
 			virtual void UpdateInternal();
+
+			void RecalculateSize();
 			
 		private:
 
-			TurtleWindow * _parentWindow;
 
-			sf::RectangleShape * _background;
+
+
+
+
+			TurtleWindow * _parentWindow = nullptr;
+			Element * _parent = nullptr;
+
+			sf::RectangleShape * _background = nullptr;
 
 			Int _posX = 0;
 			Int _posY = 0;
@@ -85,8 +100,8 @@ namespace turtle
 			
 			Bool _isVisible = true;
 
-			String name;
-			String id;
+			String _name;
+			String _id;
 
 		private:
 

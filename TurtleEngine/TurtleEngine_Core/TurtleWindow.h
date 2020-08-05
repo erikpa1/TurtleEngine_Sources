@@ -50,6 +50,9 @@ namespace turtle
 			sf::RenderWindow * GetDrawer();
 
 
+			void SetSize(Float sizeX, Float sizeY);
+			Float2 GetSize();
+
 
 
 		private:

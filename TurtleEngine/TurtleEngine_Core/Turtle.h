@@ -53,6 +53,11 @@ namespace turtle
 	typedef Vec4<Int> Int4;
 
 
+	typedef Vec2<Float> Float2;
+	typedef Vec3<Float> Float3;
+	typedef Vec4<Float> Float4;
+
+
 }
 
 

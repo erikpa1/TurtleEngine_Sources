@@ -7,6 +7,12 @@ namespace turtle
 	{
 	public:
 
+		Vec2(TYPE x, TYPE y)
+		{
+			_x = x;
+			_y = y;
+		}
+
 		TYPE _x;
 		TYPE _y;
 
