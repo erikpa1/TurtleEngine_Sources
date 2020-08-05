@@ -15,14 +15,11 @@ namespace turtle
 
 		TurtleWindowTest::~TurtleWindowTest()
 		{
-			delete _window;
 		}
 
 		void TurtleWindowTest::Construct()
 		{
-			_window = TurtleWindow::New();
-			_window->Construct();
-
+			_window = StrShare<TurtleWindow>();
 		}
 
 		void TurtleWindowTest::RunTestDraw()

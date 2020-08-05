@@ -20,9 +20,6 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="Memory">
-      <UniqueIdentifier>{c473b3fd-dcb7-4651-af44-c82c3836d6cb}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Peripherals">
       <UniqueIdentifier>{cb5ae592-092d-492e-b8ed-f09de4bc0044}</UniqueIdentifier>
     </Filter>
@@ -39,9 +36,6 @@
     </ClInclude>
     <ClInclude Include="pch.h">
       <Filter>zPrecompiled</Filter>
-    </ClInclude>
-    <ClInclude Include="Log.h">
-      <Filter>Debug</Filter>
     </ClInclude>
     <ClInclude Include="Turtle.h">
       <Filter>zPrecompiled</Filter>
@@ -84,15 +78,6 @@
     </ClInclude>
     <ClInclude Include="Button.h">
       <Filter>Gui</Filter>
-    </ClInclude>
-    <ClInclude Include="TurtleObject.h">
-      <Filter>Memory</Filter>
-    </ClInclude>
-    <ClInclude Include="StrongShell.h">
-      <Filter>Memory</Filter>
-    </ClInclude>
-    <ClInclude Include="WeakShell.h">
-      <Filter>Memory</Filter>
     </ClInclude>
     <ClInclude Include="PythonInterpreter.h">
       <Filter>Python</Filter>
@@ -161,9 +146,6 @@
     </ClCompile>
     <ClCompile Include="Button.cpp">
       <Filter>Gui</Filter>
-    </ClCompile>
-    <ClCompile Include="TurtleObject.cpp">
-      <Filter>Memory</Filter>
     </ClCompile>
     <ClCompile Include="Registration_Gui.cpp">
       <Filter>Python</Filter>

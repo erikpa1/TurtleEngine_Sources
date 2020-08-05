@@ -1,26 +1,48 @@
 #pragma once
-
 #define TurtleExport __declspec(dllexport)
 
+//External libraries
 #include <iostream>
+#include <memory>
+#include <vector>
 
+
+//My libraries
 #include "MathDataTypes.h"
 
-#include "StrongShell.h"
-#include "WeakShell.h"
 
+//Logging
+#define LogErr(_x_) std::cout << "[E] " << __FUNCTION__ << ": " << __LINE__ << ": " << _x_ <<std::endl
+#define LogInf(_x_) std::cout << "[I] " << __FUNCTION__ << ": " << __LINE__ << ": " << _x_ <<std::endl
+
+
+//Memory
+template<class T>
+using StrShell = std::shared_ptr<T>;
+template<class T>
+using WeakShell = std::weak_ptr<T>;
+
+template<class T, typename... Args>
+StrShell<T> StrShare(Args ... args)
+{
+	return std::make_shared<T>(args...);
+}
+
+
+
+typedef double Double;
+typedef float Float;
+typedef int Int;
+typedef unsigned int Uint;
+typedef unsigned char Byte;
+
+
+
+typedef bool Bool;
 
 namespace turtle
 {
-
-	typedef double Double;
-	typedef float Float;
-	typedef int Int;
-	typedef unsigned int Uint;
-
 	typedef std::string String;
-
-	typedef bool Bool;
 
 	typedef Vec2<Double> Double2;
 	typedef Vec3<Double> Double3;
@@ -30,5 +52,10 @@ namespace turtle
 	typedef Vec3<Int> Int3;
 	typedef Vec4<Int> Int4;
 
+
 }
+
+
+
+
 

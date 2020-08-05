@@ -6,6 +6,7 @@
 #include "SFML/OpenGL.hpp"
 #include "SFML/Graphics.hpp"
 
+#include "Paths.h"
 
 using namespace sf;
 
@@ -25,8 +26,10 @@ namespace turtle
 
 			if (sf::Shader::isAvailable())
 			{
-				Bool vertexStatus = _shader->loadFromFile("D:/TurtleEngine/TurtleEngine_Shaders/" + vertex, sf::Shader::Vertex);
-				Bool fragmentStatus = _shader->loadFromFile("D:/TurtleEngine/TurtleEngine_Shaders/" + fragment, sf::Shader::Fragment);
+				const auto vertexPath = PathsManager::GetShadersPath() + vertex;
+				const auto fragmentPath = PathsManager::GetShadersPath() + fragment;
+				Bool vertexStatus = _shader->loadFromFile(vertexPath, sf::Shader::Vertex);
+				Bool fragmentStatus = _shader->loadFromFile(fragmentPath, sf::Shader::Fragment);
 
 				_loaded = vertexStatus && fragmentStatus;
 			}

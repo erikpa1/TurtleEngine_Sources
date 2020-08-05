@@ -1,13 +1,18 @@
 #include "pch.h"
+#include "Turtle.h"
 
-#include "PythonInterpreter.h"
 
 #include <pybind11/embed.h>
 #include <pybind11/operators.h>
 #include <pybind11/stl.h>
 
+#include "PythonInterpreter.h"
 
 namespace py = pybind11;
+
+PYBIND11_DECLARE_HOLDER_TYPE(T, std::shared_ptr<T>, true);
+
+
 
 namespace turtle
 {
@@ -53,8 +58,7 @@ namespace turtle
 
 		void PythonInterpreter::Run()
 		{
-
-
+			LogInf("Importing module Core.run");
 			py::module::import("Core.run");
 
 		}

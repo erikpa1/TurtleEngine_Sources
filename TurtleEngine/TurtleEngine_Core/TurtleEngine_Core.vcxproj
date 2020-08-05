@@ -166,7 +166,6 @@
     <ClInclude Include="framework.h" />
     <ClInclude Include="Keyboard.h" />
     <ClInclude Include="Layout.h" />
-    <ClInclude Include="Log.h" />
     <ClInclude Include="MathDataTypes.h" />
     <ClInclude Include="Paths.h" />
     <ClInclude Include="TurtleShader.h" />
@@ -179,13 +178,10 @@
     <ClInclude Include="PythonRegistration.h" />
     <ClInclude Include="Renderer.h" />
     <ClInclude Include="Shape.h" />
-    <ClInclude Include="StrongShell.h" />
     <ClInclude Include="Turtle.h" />
-    <ClInclude Include="TurtleObject.h" />
     <ClInclude Include="TurtleWindow.h" />
     <ClInclude Include="TurtleWindowPool.h" />
     <ClInclude Include="TurtleWindowTest.h" />
-    <ClInclude Include="WeakShell.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Button.cpp" />
@@ -211,7 +207,6 @@
     <ClCompile Include="Registration_Math.cpp" />
     <ClCompile Include="TurtleShader.cpp" />
     <ClCompile Include="Shape.cpp" />
-    <ClCompile Include="TurtleObject.cpp" />
     <ClCompile Include="TurtleWindow.cpp" />
     <ClCompile Include="TurtleWindowPool.cpp" />
     <ClCompile Include="TurtleWindowTest.cpp" />

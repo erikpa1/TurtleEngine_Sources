@@ -1,10 +1,9 @@
 #pragma once
-#include "TurtleObject.h"
-
 
 namespace sf
 {
 	class RenderWindow;
+	class Shape;
 }
 
 namespace turtle
@@ -15,23 +14,24 @@ namespace turtle
 		class TurtleShader;
 	}
 
-
 	namespace gui
 	{
-		class TurtleExport TurtleWindow : public TurtleObject
+		class Element;
+
+		class TurtleExport TurtleWindow
 		{
 
 		public:
 
-			static TurtleWindow * New();
+			static StrShell<TurtleWindow> New();
+			TurtleWindow();
 
-			void Construct();
 			void Destruct();
-
 
 		protected:
 
-			TurtleWindow() = default;
+			void Construct();
+
 
 		private:
 
@@ -39,9 +39,18 @@ namespace turtle
 			renderer::Renderer * _renderer;
 			renderer::TurtleShader * _shader;
 
+			StrShell<Element> _root;
+
 		public:
 
+			const StrShell<Element> & GetRoot();
+
 			void DrawTestMesh();
+			void StartDrawingCycle();
+			sf::RenderWindow * GetDrawer();
+
+
+
 
 		private:
 

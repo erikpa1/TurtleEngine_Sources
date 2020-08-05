@@ -1,13 +1,11 @@
 #pragma once
-#include "TurtleObject.h"
 #include <pybind11/pybind11.h>
-
 
 namespace turtle
 {
 	namespace python
 	{
-		class TurtleExport PythonInterpreter : public TurtleObject
+		class TurtleExport PythonInterpreter
 		{
 
 		public:

@@ -1,5 +1,4 @@
 #pragma once
-#include "TurtleObject.h"
 
 namespace sf
 {
@@ -10,7 +9,7 @@ namespace turtle
 {
 	namespace renderer
 	{
-		class TurtleExport TurtleShader : public TurtleObject
+		class TurtleExport TurtleShader
 		{
 		public:
 

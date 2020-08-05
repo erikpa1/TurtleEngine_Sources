@@ -1,5 +1,9 @@
 #pragma once
+
 #include "Turtle.h"
+
+
+
 
 namespace turtle
 {
@@ -13,11 +17,11 @@ namespace turtle
 
 		void IncrementCount();
 		void DecrementCount();
-		Int GetReferenceCount();
+		int GetReferenceCount();
 
 	private:
 
-		Int _referenceCount = 0;
+		int _referenceCount = 0;
 
 	};
 }

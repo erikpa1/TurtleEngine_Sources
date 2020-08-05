@@ -1,5 +1,5 @@
 #pragma once
-#include "TurtleObject.h"
+#include "Turtle.h"
 
 namespace turtle
 {
@@ -21,7 +21,7 @@ namespace turtle
 
 		private:
 
-			TurtleWindow * _window;
+			StrShell<TurtleWindow> _window;
 
 
 		};

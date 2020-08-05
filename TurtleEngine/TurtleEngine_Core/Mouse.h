@@ -1,11 +1,11 @@
 #pragma once
-#include "TurtleObject.h"
+#include "Turtle.h"
 
 namespace turtle
 {
 	namespace gui
 	{
-		class Mouse : public TurtleObject
+		class Mouse
 		{
 
 

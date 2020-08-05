@@ -3,11 +3,18 @@
 
 namespace turtle
 {
-	class FileSystemManager
+	class PathsManager
 	{
-		static const String & GetLibrariesAbsPath()
+	public:
+
+		static const String GetEnginePath()
 		{
-			return "";
+			return "C:/Work/TurtleEngine/";
+		};		
+		
+		static const String GetShadersPath()
+		{
+			return GetEnginePath() + "TurtleEngine_Shaders/";
 		};
 	};
 

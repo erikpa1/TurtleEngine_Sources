@@ -1,6 +1,4 @@
 #pragma once
-#include "TurtleObject.h"
-
 namespace turtle
 {
 	namespace math
