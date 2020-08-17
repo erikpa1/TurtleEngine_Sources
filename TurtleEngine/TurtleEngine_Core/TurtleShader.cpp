@@ -12,6 +12,8 @@ using namespace sf;
 
 namespace turtle
 {
+	using namespace filesystem;
+
 	namespace renderer
 	{
 		TurtleShader * TurtleShader::New(const String & vertex, const String & fragment)

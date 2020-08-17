@@ -1,23 +1,26 @@
 #pragma once
 #include "Turtle.h"
 
+
+using namespace std;
+
 namespace turtle
 {
-	class PathsManager
+	namespace filesystem
 	{
-	public:
+		class PathsManager
+		{
 
-		static const String GetEnginePath()
-		{
-			return "C:/Work/TurtleEngine/";
-		};		
-		
-		static const String GetShadersPath()
-		{
-			return GetEnginePath() + "TurtleEngine_Shaders/";
+		public:
+
+			static const String GetEnginePath();
+			static const String GetShadersPath();
+
+
 		};
-	};
 
+
+	}
 
 
 

@@ -168,5 +168,8 @@
     <ClCompile Include="Registration_Math.cpp">
       <Filter>Python</Filter>
     </ClCompile>
+    <ClCompile Include="Paths.cpp">
+      <Filter>Filesystem</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

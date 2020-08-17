@@ -31,6 +31,8 @@ int main()
 		std::cerr << e.what();
 	}
 
+	LogInf("Ending turtle engine");
+
 
 	return 0;
 }
