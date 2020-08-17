@@ -56,6 +56,12 @@ namespace turtle
 			_posY = posY;
 		}
 
+		void Element::SetPosition(Int posX, Int posY)
+		{
+			SetPosX(posX);
+			SetPosY(posY);
+		}
+
 		Int Element::GetPosX()
 		{
 			return Int();
@@ -223,6 +229,10 @@ namespace turtle
 			}
 
 
+		}
+
+		void Element::RecalculatePosition()
+		{
 		}
 
 		Float2 Element::GetParentSize()

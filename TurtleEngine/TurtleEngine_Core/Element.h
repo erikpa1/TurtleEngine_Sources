@@ -38,6 +38,7 @@ namespace turtle
 
 			void SetPosX(Int posX);
 			void SetPosY(Int posY);
+			void SetPosition(Int posX, Int posY);
 
 			Int GetPosX();
 			Int GetPosY();
@@ -79,6 +80,7 @@ namespace turtle
 			virtual void UpdateInternal();
 
 			void RecalculateSize();
+			void RecalculatePosition();
 			
 		private:
 
